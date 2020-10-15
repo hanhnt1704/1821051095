@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=divice-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+
+			*{
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+			}
+			body{
+				color: #666;
+				font-family: 'Rajdhani', sans-serif;
+			}
+			header {
+				text-align: center;
+				background: #708090;
+				height: 200px;
+				padding-top: 30px; 
+			}
+			header h1{
+				font-size: 50px;
+				color: pink;	
+			}
+			header h3{
+				margin-top: 20px;
+				color: pink;
+			}
+			nav{
+				padding: 0px;
+				margin: 0px;
+				background: #528B8B;
+			}
+			nav ul li{
+				display: inline-block;
+				list-style: none;
+				position: relative; 
+				font-size:20px;
+			}
+			nav ul li a{
+				text-decoration: none;
+				color: #fff;
+				font-size: 20px;
+				padding: 9px 20px;
+				display: block;
+			}
+			nav ul li a:hover{
+				background: black;
+				transition: 0.6s;
+				text-decoration: 1px dotted #fff;
+			}
+			nav ul li >ul{
+				position: absolute;
+				visibility: hidden;
+				background-color:#528B8B ;
+			}
+			nav ul li >ul li{
+				width: 150px;
+				border-bottom: 1px solid black;
+			}
+			nav ul li >ul li a{
+            text-align: center;
+            padding: 9px 10px;
+            text-decoration: none;
+        }
+        nav ul li:hover >ul{
+            visibility:visible;
+            display: block;
+			}
+		.container{
+			max-width: 1080px;
+			margin:60px 100px 60px 100px;			
+		}
+		.container hr{
+		 border: 2px solid black;
+         background:  black;
+         width: 1080px;
+		}
+        .container h1{
+        	text-align: center;
+        }
+        .row-top{
+        	display: flex;
+        }
+       .content_left {
+        text-align: justify;
+        width: 70%;
+
+        }
+       .content_right {
+        margin-left: 30px;
+        width: 30%;
+        color: grey;
+        }
+       .row{
+        	display: flex;
+        	align-items: center;
+        	flex-wrap: wrap;
+        	margin: 20px 20px 20px 20px;
+        }
+       .hr-left{
+         border: 1px solid black;
+         background:  black;
+         width: 700px;
+     	}
+       .image img{
+        width: 300px;
+       }
+       .text {
+       	padding-top: 40px;
+       	padding-left: 20px;
+       	font-size: 20px;
+       }
+       .btn-continue{
+       	border-color: grey;
+        height: 30px;
+        outline-style: none;
+        background: white;
+        margin-top: 100px;
+        margin-left: 200px;
+        color: grey;
+
+       }
+       .wrapper {
+       	border: 1px solid #1a1a1a;
+        padding: 30px;
+        text-align: center;
+        margin: 20px 0px 20px 20px;
+       }
+       .hr {
+       	width: 80px;
+       	height: 1px;
+       	background-color: grey;
+       	margin: auto;
+       }
+       .follower{
+       	padding-left: 500px;
+       	color: white;
+       	background-color:#528B8B; 
+       }
+       .sub{
+       	border-color: grey;
+       	border-radius: 10px;
+        height: 30px;
+        outline-style: none;
+        background: white;
+        margin-top: 10px;
+        margin-left: 200px;
+        color: grey;
+
+       }
+       footer {
+       	background-color: #708090;
+       	color: pink;
+       	text-align: center;
+       }		
+	</style>       
+</head>
+<body>  
+    <nav>
+    	<ul>
+        	<li><a href="#">Home</a></li>
+        	<li><a href="#">Service</a></li>
+        	<li><a href="#">Contact</a>
+        		<ul>
+        			<li><a href="">Link1</a></li>
+        			<li><a href="">Link2</a></li>
+        			<li><a href="">Link3</a></li>
+        		</ul>
+        	</li> 
+       	 <li style="float: right;"><a href="">About us</a></li>  
+   		 </ul>
+        
+    </nav>
+    <header>
+    	<h1>LOVE BEATY AND PLANET</h1>
+        <h3> A blog by Me</h3>
+    </header>
+    <div class="container">
+        <h1>beaty for us</h1>
+        <hr>
+    </div>
+    <div class="container">
+    	<div class="row-top">
+        	<div class="content_left">
+        		<div class="item-news">	
+        			<div class="row">
+                     	<div class="image">
+                       		 <img src="./img/4.jpeg">
+                     	</div>
+                    	<div class="text">
+                        	<h4>TOP 4 TONER ĐƯỢC YÊU THÍCH NHẤT</h4>
+                        	<p>february 17, 2020<br>Những lời đồn phổ biến nhất về toner <br>sẽ được giải đáp tại đây</p>
+                        	<input class="btn-continue" type="submit" value="Continue >">
+                    	</div>
+                    </div>
+                </div>
+                <div class="item-news">
+                <div class="hr-left"></div>
+                    <div class="row">
+                     	<div class="image">
+                       		 <img src="./img/3.jpg">
+                     	</div>
+                    	<div class="text">
+                        	<h4> 20 OUTFITS KHI "KHÔNG CÓ GÌ ĐỂ MẶC</h4>
+                        	<p>february 27, 2020<br> Cùng chia sẻ các tips lên đồ<br> với các chị em nhó </p>
+                        	<input class="btn-continue" type="submit" value="Continue >">
+                    	</div>
+                    </div>
+                </div>
+                <div class="item-news">	
+                	<div class="hr-left"></div>
+                    <div class="row">
+                     	<div class="image">
+                       		 <img src="./img/1.jpg">
+                     	</div>
+                    	<div class="text">
+                        	<h4>NIVEA HOKKAIDO ROSE WHIP FOAM CLEANSER</h4>
+                        	<p>april 20, 2020<br>Sữa rửa mặt là một trong những<br>sản phẩm chăm sóc da không thể<br> thiếu của bất kỳ ai</p>
+                        	<input class="btn-continue" type="submit" value="Continue >">
+                    	</div>
+                    	<div class="hr-left"></div>
+                    </div>
+                </div>
+             </div>
+             <div class="content_right">
+             	<div class="wrapper">            		
+             		<h2>WELCOM</h2>
+             			<div class="hr"></div>
+             				<p> Here is the place I will share with you my experience & feeling about all things I've loved, learnt and discovered!</p>
+             	</div>
+             	<div class="wrapper">
+             		<h2>Contact with me</h2>
+             			<div class="hr"></div>
+             		 		<i class="fa fa-facebook-official" aria-hidden="true"></i>
+             		 		<i class="fa fa-instagram" aria-hidden="true"></i>
+             		 		<i class="fa fa-youtube-play" aria-hidden="true"></i>
+             	</div>
+             </div>
+        	</div>
+        	</div>
+        </div>
+    </div>
+    <div class="follower">
+        <table cellpadding="5">
+        	<h2>Follow me</h2>
+            <tr>
+                <td><b>Name</b><span  style="color:red">*</span></td>
+                <td><input type="text" id="name" placeholder="nhap ho va ten"></td>
+                <td><span id="nameError"></span></td>
+            </tr>
+            <tr>
+                <td><b>Username</b><span  style="color:red">*</span></td>
+                <td><input type="text" id="username" placeholder="tren 8 ki tu"></td>
+                <td><span id="userError"></span></td>
+            </tr>
+            <tr>
+                <td><b>Password</b><span  style="color:red">*</span></td>
+                <td><input type="password" id="pass"></td>
+                <td><span id="userError"></span></td>
+            </tr>
+            <tr>
+                <td><b>Nhập lại password</b><span  style="color:red">*</span></td>
+                <td><input type="password" id="repass"></td>
+                <td><span id="repassError"></span></td>
+            </tr>
+            <tr>
+                <td><b>EMail</b><span  style="color:red">*</span> </td>
+                <td><input type="text" id="mail" name="mail" placeholder="Abc@gmail.com"></td>
+                <td><span id="EmailError"></span></td>
+            </tr>
+            <tr>
+                <td><b>Số điện thoại</b><span  style="color:red">*</span></td>
+                <td><input type="tel" id="phone"></td>
+                <td><span id="PhoneError"></span></td>
+            </tr>
+            <tr>
+            	<td> <button type="submit" class="sub">Submit ></button></td>
+            </tr>       
+    </table>
+    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#name").onchange = function() {
+                if (document.querySelector("#name").value == "") {
+                    document.querySelector("#nameError").innerHTML = "*Hãy nhập họ va tên!";
+                } else(document.querySelector("#nameError").innerHTML = "");
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#pass").onchange = function() {
+                if (document.querySelector("#pass").value == "") {
+                    document.querySelector("#passError").innerHTML = "*Hãy nhập password!";
+                } else{
+                    document.querySelector("#passError").innerHTML = "";
+                }
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#repass").onchange = function() {
+                if (document.querySelector("#repass").value === document.querySelector("#pass").value) {
+                    document.querySelector("#repassError").innerHTML = "";
+                } else {
+                    document.querySelector("#repassError").innerHTML = "*Password chưa đúng. Nhập lại password!"
+                };
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#username").onchange = function() {
+                if (document.querySelector("#username").value == "") {
+                    document.querySelector("#userError").innerHTML = "*Bạn hãy nhập username";
+                } else if (document.querySelector("#username").value.length < 8) {
+                    document.querySelector("#userError").innerHTML = "*Username quá ngắn!hãy nhập trên 8 kí tự!"
+                } else {
+                    document.querySelector("#userError").innerHTML == "";
+                }
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("mail").onchange = function() {
+                if (document.querySelector("#mail").value == "") {
+                    document.querySelector("#mailError").innerHTML = "*Hãy nhập email!";
+                } else {
+                    document.querySelector("#mailError").innerHTML == "";
+                }
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#phone").onchange = function() {
+                if (document.querySelector("#phone").value == "") {
+                    document.querySelector("#phoneError").innerHTML = "* Hãy điền số điện thọai!";
+                } else {
+                    document.querySelector("#phoneError").innerHTML == "";
+                }
+            }
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#answer").onchange = function() {
+                if (document.querySelector("#answer").value == "") {
+                    document.querySelector("#answerError").innerHTML = "*Bạn hãy nhập Username";
+                } else {
+                    document.querySelector("answerError").innerHTML == "";
+                }
+            }
+        });
+</script>
+<footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col-1">
+                    <h2>@Loverbeatyandplanet!</h2>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i>Số điện thoại:088958888</p>
+                    <p><i class="fa fa-location-arrow" aria-hidden="true"></i>Địa Chỉ:<br>18-Phố Viên-Quận Bắc Từ Liêm-Thành Phố Hà Nội</p>
+                </div>
+           </div>
+        </div>
+  </footer>
+</body>
+</html>
